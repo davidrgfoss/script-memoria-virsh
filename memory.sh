@@ -4,7 +4,6 @@ var1=0
 var2=0
 
 function crear-ficheros {
-
 virsh -c qemu:///system dommemstat --domain "$maquina" > temp
 sed -i '$d' temp
 rm -Rf temp2
@@ -12,7 +11,6 @@ touch temp2
 }
 
 function filtrado {
-
 while read fich
 do
 	
